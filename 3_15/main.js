@@ -12,9 +12,8 @@ class PlayerCard {
         document.querySelector("#lastNameOutput").innerHTML = this.lastName
         document.querySelector("#ageOutput").innerHTML = this.age
         document.querySelector("#currentClubOutput").innerHTML = this.currentClub
-        document.querySelector("#netWorthOutput").innerHTML = this.netWorth
-        const output = document.querySelector("#output")
-        output.style.background=`url=(${this.image})`
+        document.querySelector("#netWorthOutput").innerHTML = this.netWorth + "€"
+        document.querySelector("#output").style.background=`url=('${this.image}')`
         console.log(this.image)
     }
 }
