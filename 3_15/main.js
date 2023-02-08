@@ -13,7 +13,7 @@ class PlayerCard {
         document.querySelector("#ageOutput").innerHTML = this.age
         document.querySelector("#currentClubOutput").innerHTML = this.currentClub
         document.querySelector("#netWorthOutput").innerHTML = this.netWorth + "€"
-        document.querySelector("#output").style.background=`url=('${this.image}')`
+        /* document.querySelector("#output").style.background=`url=(${this.image})` */
         console.log(this.image)
     }
 }
@@ -25,6 +25,8 @@ document.querySelector("#button").addEventListener('click', () => {
     const currentClub = document.querySelector("#currentClub").value
     const netWorth = document.querySelector("#netWorth").value
     const image = document.querySelector("#imageURL").value
+    /* const output = document.querySelector("#output").style.background=`url=${image}` */
+    console.log(image)
     const newCard = new PlayerCard(firstName,lastName,age,currentClub,netWorth,image)
     newCard.cardOutput()
 })
